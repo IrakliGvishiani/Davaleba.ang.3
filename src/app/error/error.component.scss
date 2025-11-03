@@ -1,0 +1,13 @@
+.ramee{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;;
+
+    p{
+        font-size: 40px;
+        font-weight: bold ;
+    }
+}

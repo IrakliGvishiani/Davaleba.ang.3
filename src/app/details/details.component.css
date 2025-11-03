@@ -1,0 +1,10 @@
+div {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+div p {
+  font-size: 40px;
+  font-weight: bold;
+}/*# sourceMappingURL=details.component.css.map */
