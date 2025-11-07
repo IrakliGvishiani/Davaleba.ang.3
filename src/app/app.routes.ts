@@ -15,20 +15,24 @@ export const routes: Routes = [
     ,
     {
         path : 'main',
-        component: MainComponent
+        loadComponent: () => import('./main/main.component').then(com => com.MainComponent)
     }
     ,
     {
         path: 'contact-us',
-        component: ContactUsComponent
+        loadComponent: () => import('./contact-us/contact-us.component').then(com => com.ContactUsComponent)
     },
     {
         path: 'details',
-        component: DetailsComponent
+        loadComponent: () => import('./details/details.component').then(com => com.DetailsComponent)
     },
     {
         path: 'about-us',
-        component: AboutUsComponent
+        loadComponent: () => import('./about-us/about-us.component').then(com => com.AboutUsComponent)
+    },
+    {
+        path: 'products',
+        loadComponent: () => import('./products/products.component').then(com => com.ProductsComponent)
     },
     {
         path: '**',

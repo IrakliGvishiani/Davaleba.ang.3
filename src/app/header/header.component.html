@@ -1,7 +1,8 @@
 <nav>
     <ul>
-        <li><a routerLink="/contact-us">Contact Us</a></li>
-        <li><a routerLink="/about-us">About Us</a></li>
-        <li><a routerLink="/details">Details</a></li>
+        <li><a routerLink="/contact-us" [routerLinkActive]="active">Contact Us</a></li>
+        <li><a routerLink="/about-us" [routerLinkActive]="active">About Us</a></li>
+        <li><a routerLink="/details" [routerLinkActive]="active">Details</a></li>
+        <li><a routerLink="/products" [routerLinkActive]="active">Products</a></li>
     </ul>
 </nav>

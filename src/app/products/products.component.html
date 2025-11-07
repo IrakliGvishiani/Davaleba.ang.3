@@ -1,0 +1,18 @@
+<input type="number" placeholder="Id" [(ngModel)]="products.id">
+<input type="text" placeholder="name" [(ngModel)]="products.name">
+<input type="number" placeholder="price" [(ngModel)]="products.price">
+<input type="text" placeholder="image" [(ngModel)]="products.image">
+<input type="number" placeholder="spiciness" [(ngModel)]="products.spiciness">
+<input type="number" placeholder="category Id" [(ngModel)]="products.categoryId">
+<p>Nuts</p>
+<select [(ngModel)]="products.nuts">
+    <option value="true">Nuts</option>
+    <option value="false">No Nuts</option>
+</select>
+<p>Vegetarian</p>
+<select [(ngModel)]="products.vegetarian">
+    <option value="true">Vegetarian</option>
+    <option value="false">Non Vegetarian</option>
+</select>
+<br>
+<button (click)="addToArr()">Add</button>
