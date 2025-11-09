@@ -10,9 +10,25 @@
     <option value="false">No Nuts</option>
 </select>
 <p>Vegetarian</p>
-<select [(ngModel)]="products.vegetarian">
+<select [(ngModel)]="products.vegeterian">
     <option value="true">Vegetarian</option>
     <option value="false">Non Vegetarian</option>
 </select>
 <br>
 <button (click)="addToArr()">Add</button>
+ <button (click)="update()">Update</button>
+<div class="gridd">
+    <div class="card" style="width: 18rem;" *ngFor="let el of prodArray; let ind = index">
+        <p>{{ind + 1}}</p>
+  <img [src]="el.image" class="card-img-top" alt="...">
+  <div class="card-body">
+    <h5 class="card-title">{{el.name}}</h5>
+     <p>{{el.nuts == true || el.nuts == 'true' ? 'With nuts':'Without nuts'}}</p>
+     <p>{{el.price}} $</p>
+    <a (click)="deletById(el.id)" class="btn btn-danger">Delete</a>
+   
+    <button class="btn btn-success" (click)="Edit(el.id)">Edit</button>
+    
+  </div>
+</div>
+</div>

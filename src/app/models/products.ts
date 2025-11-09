@@ -2,9 +2,10 @@
     id! : number;
     name! : string;
     price! : number;
-    nuts! : boolean;
+    nuts! : boolean | string;
     image! : string;
-    vegetarian! : boolean;
+    vegeterian! : boolean | string;
     spiciness! : number;
     categoryId! : number
   }
+
